@@ -21,6 +21,7 @@
 #import "MASExampleArrayView.h"
 #import "MASExampleAttributeChainingView.h"
 #import "MASExampleAspectFitView.h"
+#import "MASExampleSquaresView.h"
 
 static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
 
@@ -41,6 +42,8 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
     self.exampleControllers = @[
         [[MASExampleViewController alloc] initWithTitle:@"Basic"
                                               viewClass:MASExampleBasicView.class],
+        [[MASExampleViewController alloc] initWithTitle:@"Squares"
+                                              viewClass:MASExampleSquaresView.class],
         [[MASExampleViewController alloc] initWithTitle:@"Update Constraints"
                                               viewClass:MASExampleUpdateView.class],
         [[MASExampleViewController alloc] initWithTitle:@"Remake Constraints"
